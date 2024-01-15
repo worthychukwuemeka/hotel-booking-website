@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking Remixicon font -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Title of the webpage -->
+    <title>Day 29 - Hotel Booking Website</title>
+
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Linking additional font for the webpage -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo with specific font style -->
+        <div class="nav__logo" style="font-family: 'DM Serif Display', serif; color: #f7138f;">The Vue</div>
+
+        <!-- List of navigation links -->
+        <ul class="nav__links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Book</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="section__container header__container">
+        <!-- Header Image Container with background image -->
+        <div class="header__image__container">
+            <!-- Header Content with title and description -->
+            <div class="header__content">
+                <h1 style="font-family: 'DM Serif Display', sans-serif; color: #fcfcfc; text-transform: capitalize;">
+                    Enjoy Your Dream Vacation</h1>
+                <p style="color: #ffffff; font-weight: 600; text-transform: lowercase;">Book Hotels, Flights and stay
+                    packages at lowest price.</p>
+            </div>
+
+            <!-- Booking Container with form and search button -->
+            <div class="booking__container">
+                <form>
+                    <!-- Form groups for various input fields -->
+                    <div class="form__group">
+                        <!-- Input field for location -->
+                        <div class="input__group">
+                            <input type="text" />
+                            <label>Location</label>
+                        </div>
+                        <!-- Paragraph for additional information -->
+                        <p style="font-family: 'DM Serif Display';">Where are you going?</p>
+                    </div>
+
+                    <!-- Form groups for date inputs -->
+                    <div class="form__group">
+                        <div class="input__group">
+                            <!-- Input field for check-in date -->
+                            <input type="date" style="font-family: 'Manrope', sans-serif;" />
+                        </div>
+                        <!-- Paragraph for check-in date -->
+                        <p style="font-family: 'DM Serif Display';">Check In</p>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="input__group">
+                            <!-- Input field for check-out date -->
+                            <input type="date" style="font-family: 'Manrope', sans-serif;" />
+                        </div>
+                        <!-- Paragraph for check-out date -->
+                        <p style="font-family: 'DM Serif Display';">Check Out</p>
+                    </div>
+
+                    <!-- Form group for guests input -->
+                    <div class="form__group">
+                        <div class="input__group">
+                            <!-- Input field for number of guests -->
+                            <input type="text" />
+                            <label>Guests</label>
+                        </div>
+                        <!-- Paragraph for adding guests -->
+                        <p style="font-family: 'DM Serif Display';">Add guests</p>
+                    </div>
+                </form>
+
+                <!-- Search button with search icon -->
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section for Popular Hotels -->
+    <section class="section__container popular__container">
+        <!-- Header for Popular Hotels section -->
+        <h2 class="section__header" style="font-family: 'DM Serif Display';">Our Popular Hotels</h2>
+
+        <!-- Grid layout for displaying popular hotel cards -->
+        <div class="popular__grid">
+            <!-- Individual popular hotel card -->
+            <div class="popular__card">
+                <!-- Image of the hotel -->
+                <img src="assets/h-1.jpg" alt="popular hotel" />
+
+                <!-- Content within the popular hotel card -->
+                <div class="popular__content">
+                    <!-- Header of the card with hotel name and price -->
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">Transcorp Hilton</h4>
+                        <h4>₦70,000</h4>
+                    </div>
+                    <!-- Location of the hotel -->
+                    <p>Abuja FCT, Nigeria</p>
+                </div>
+            </div>
+            <!-- Repeated the structure for other popular hotel cards -->
+            <div class="popular__card">
+                <img src="assets/h-2.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">Marriott Hotel</h4>
+                        <h4>₦64,000</h4>
+                    </div>
+                    <p>Lagos, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="popular__card">
+                <img src="assets/h-3.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">The Decadence</h4>
+                        <h4>₦85,000 <span style="text-decoration: line-through; color: #999;">₦100,000</span></h4>
+                    </div>
+                    <p>Victoria Island, Lagos</p>
+                </div>
+            </div>
+
+            <div class="popular__card">
+                <img src="assets/h-4.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">DNA Barcelona</h4>
+                        <h4>₦63,500</h4>
+                    </div>
+                    <p>Ikoyi, Lagos</p>
+                </div>
+            </div>
+
+            <div class="popular__card">
+                <img src="assets/h-5.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">The Ritz-Carlton</h4>
+                        <h4>₦85,000</h4>
+                    </div>
+                    <p>Abuja FCT, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="popular__card">
+                <img src="assets/h-6.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4 style="font-family: 'DM Serif Display';">The Destination Hotel</h4>
+                        <h4>₦80,000</h4>
+                    </div>
+                    <p>Abuja FCT, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Client Testimonials -->
+    <section class="client">
+        <!-- Container for client testimonials -->
+        <div class="section__container client__container">
+            <!-- Header for client testimonials -->
+            <h2 class="section__header" style="font-family: 'DM Serif Display', sans-serif;">Client Testimonials</h2>
+
+            <!-- Grid layout for displaying client testimonials -->
+            <div class="client__grid">
+                <!-- Individual client testimonial card -->
+                <div class="client__card">
+                    <!-- Image of the client -->
+                    <img src="assets/c-1.png" alt="client" />
+
+                    <!-- Testimonial text from the client -->
+                    <p>
+                        The booking process was seamless, and the confirmation was
+                        instant. I highly recommend The Vue for hassle-free hotel bookings.
+                    </p>
+                </div>
+                <!-- Repeat the structure for other client testimonial cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Joining the Community -->
+    <section class="section__container">
+        <!-- Container for rewards and joining the community -->
+        <div class="reward__container">
+            <!-- Paragraph prompting the user to take action -->
+            <p>What Are You Waiting For?</p>
+
+            <!-- Header inviting user to join the community -->
+            <h4>Join our community and discover amazing discounts when next you make bookings with us!</h4>
+
+            <!-- Button for joining the community -->
+            <button class="reward__btn">Join the Community</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Container for footer content -->
+        <div class="section__container footer__container">
+            <!-- Footer column with logo and company information -->
+            <div class="footer__col">
+                <div class="nav__logo" style="font-family: 'DM Serif Display', serif; color: #f7138f;">The Vue</div>
+                <p>
+                    The Vue is a premier hotel booking website that offers a seamless and
+                    convenient way to find and book accommodations in Nigeria.
+                </p>
+                <p>
+                    With a user-friendly interface and a vast selection of hotels,
+                    The Vue aims to provide a stress-free experience for travelers
+                    seeking the perfect stay.
+                </p>
+            </div>
+
+            <!-- Footer column with company-related links -->
+            <div class="footer__col">
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Our Team</p>
+                <p>Blog</p>
+                <p>Book</p>
+                <p>Contact Us</p>
+            </div>
+
+            <!-- Footer column with legal-related links -->
+            <div class="footer__col">
+                <h4>Legal</h4>
+                <p>FAQs</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <!-- Footer column with resource-related links -->
+            <div class="footer__col">
+                <h4>Resources</h4>
+                <p>Social Media</p>
+                <p>Help Center</p>
+                <p>Partnerships</p>
+            </div>
+        </div>
+
+        <!-- Footer bar with copyright information -->
+        <div class="footer__bar">
+            Copyright © 2024, Worthy's Vue. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
